@@ -6,7 +6,7 @@ from .serializers  import MobileSerializer
 from .models import Mobile
 
 # Create your views here.
-class MobileListView(ListAPIView):
+class MobileListView(ListCreateAPIView):
      queryset=Mobile.objects.all()
      serializer_class= MobileSerializer
 
